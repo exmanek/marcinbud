@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcin-Bud</title>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+     <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="Logo Firmy" class="logo">
+        <div class="header-menu">
+            <a href="">Strona główna</a>
+            <a href="#contact">Kontakt</a>
+            <a href=""></a>
+        </div>
+    </header>
+    <main>
+        <section class="intro">
+            <div class="img"></div>
+            <div class="overlay"></div>
+            <h1>Marcin-Bud</h1>
+            <p>Twój zaufany wykonawca remontów.</p>
+        </section>
+        <section class="aboutUs margin">
+            <h2>O nas</h2>
+            <div class="underline"></div>
+            <p>Jesteśmy dobrze prosperującą firmą budowlaną która działa na rynku juz od 15 lat.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum illum architecto natus est quos quas. Eos, reiciendis. Asperiores, accusamus quaerat.</p>
+            <h3>Posiadamy</h3>
+            <ul>
+                <li>Wieloletniemu doświadczenie</li>
+                <li>Wykwalifikowany zespół</li>
+                <li>Zaawansowane technologie</li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, libero magni esse amet ratione dicta omnis sit magnam laudantium alias commodi hic molestiae dolores sed, rerum dolore, tempore accusamus ab!</p>
+        </section>
+        <section class="contact margin" id="contact">
+            <h2>Kontakt</h2>
+            <div class="underline"></div>
+            <div class="wrapper">
+                <form method="get">
+                    <div class="input-box">
+                        <input type="text" name="firstname" id="fname" required>
+                        <label for="firstname">Imię</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="lastname" id="lname" required>
+                        <label for="lastname">Nazwisko</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="number" id="number" required>
+                        <label for="number">Liczba</label>
+                    </div>
+                    <div class="input-radio">
+                        <p><input type="radio" name="radio1" id="r1"> Mężczyzna</p>
+                        <p><input type="radio" name="radio1" id="r2"> Kobieta</p>
+                    </div>
+                    <select name="color-selection" id="color-selection">
+                        <option value="tomato">czerwony</option>
+                        <option value="royalblue">niebieski</option>
+                        <option value="lime">zielony</option>
+                    </select>
+                    <input type="checkbox" name="border" id="border-checkbox">
+                </form>
+                <button id="submit">Wyślij</button>
+                <section id="wynik"></section>
+                <section id="wynik2"></section>
+                <section id="animated-box"></section>
+            </div>
+        </section>
+        <canvas id="myCanvas" width="800" height="400" class="margin"></canvas>
+    </main>
+    <footer>
+        <p><span>Marcin-bud</span> | &copy 2024</p>
+    </footer>
+</body>
+</html>

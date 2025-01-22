@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 8px rgb(117, 117, 117);
+    z-index: 10;
+}
+
+header .logo{
+    height: 50px;
+}
+
+.header-menu {
+    position: absolute;
+    right: 10px;
+}
+
+.header-menu a{
+    padding: 10px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #a841a3;
+}
+
+.margin {
+    margin: 0 20%;
+}
+
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.underline {
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid #a841a3;
+    border-radius: 8px;
+    box-shadow: 0px 1px 4px rgb(131, 131, 131);
+}
+
+.intro {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f00;
+    color: white;
+}
+
+.intro .img {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/house-1867187_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.intro .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #111111ad;
+}
+
+.intro h1{
+    position: absolute;
+    top: 180px;
+    left: 10%;
+    font-size: 60px;
+    text-shadow: 3px 3px 8px rgb(43, 43, 43);
+}
+.intro p{
+    position: absolute;
+    top: 250px;
+    left: 10%;
+    font-size: 36px;
+    text-shadow: 3px 3px 8px rgb(43, 43, 43);
+}
+
+.aboutUs ul{
+    margin-left: 40px;
+}
+
+.aboutUs p {
+    margin: 10px;
+    color: #222;
+}
+
+.aboutUs h3{
+    margin: 10px 0;
+    color: #111;
+    z-index: 1;
+}
+
+.contact {
+
+}
+
+.contact .wrapper {
+
+}
+
+form {
+    justify-content: center;
+}
+
+form p {
+    display: flex;
+}
+
+.input-box {
+    padding: 10px 0;
+    position: relative;
+}
+
+.input-box input {
+    padding: 10px;
+    width: 400px;
+    border-radius: 8px;
+    border: 2px solid #aaa;
+    background: none;
+    color: #aaa;
+
+}
+.input-box label {
+    position: absolute;
+    padding: 0 5px;
+    top: 30%;
+    left: 2%;
+    transition: transform .3s;
+    color: #3a3a3a;
+}
+
+.input-box input:focus {
+    outline: none;
+    border: solid 2px #a841a3;
+}
+
+.input-box input:focus ~ label {
+    transform: translateY(-90%);
+    color: #a841a3;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.input-box input:valid ~ label {
+    transform: translateY(-90%);
+    transition: transform 0s;
+    background-color: #fff;
+}
+
+.input-radio input {
+    margin-right: 10px;
+}
+input:checked {
+    accent-color: #a841a3;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 20px 0;
+}
+
+#wynik {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 400px;
+    overflow: scroll;
+}
+
+#wynik2 {
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 100px;
+    width: 100px;
+}
+
+#animated-box {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 30px 0;
+    background-color: #ccc;
+    text-align: center;
+}
+
+footer span {
+    color: #a841a3;
+}
+
+canvas {
+    border: 1px solid black;
+}
